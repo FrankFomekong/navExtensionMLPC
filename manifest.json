@@ -1,0 +1,33 @@
+{
+  "manifest_version":2,
+  "version":"1.0",
+  "name":"Test",
+  "content_scripts":[
+    {
+     "matches":["*://*.actucameroun.com/*"],
+     "js":["main.js"]
+    }
+  ],
+  "permissions":[
+    "tabs",
+    "bookmarks"
+  ],
+  "host_permissions":[
+    "*://*.actucameroun.com/*",
+    "*/://*/*"
+  ],
+  
+  "icons": {
+  "48": "icon-48.png",
+  "96": "icon-96.png"
+},
+  "web_accessible_resources": [
+        "pp.jpg"
+  ],
+  "browser_action":{
+   "default_icon":{
+     "19":"icon-48.png",
+     "38":"icon-96.png"
+   }
+  }
+}
